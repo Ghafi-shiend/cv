@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghafira Anindya Pasha - Kontak</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (untuk ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate.css (untuk animasi) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+
+    <!-- Neon Loading Bar -->
+    <div id="loading-bar"></div>
+
+    <!-- Navbar Modern -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ghafira A.P.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keahlian.html">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projek.html">Projek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artikel.php">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <div class="text-center mb-5 animate__animated animate__fadeInDown">
+            <h1 class="display-5 fw-bold">Hubungi Saya</h1>
+            <p class="lead text-muted">Jangan ragu untuk mengirim pesan atau terhubung di sosial media.</p>
+        </div>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                <div class="card bg-white border p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan Anda</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info & Social Media -->
+            <div class="col-lg-6 d-flex flex-column justify-content-center mt-4 mt-lg-0 animate__animated animate__fadeInRight">
+                <div class="text-center text-lg-start">
+                    <h3 class="fw-light">Info Kontak</h3>
+                    <p><i class="fas fa-envelope me-2"></i> <a href="mailto:ghafiraanindya89@gmail.com" class="text-dark text-decoration-none">ghafiraanindya89@gmail.com</a></p>
+                    <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/6281326486534" class="text-dark text-decoration-none">081326486534</a></p>
+                    
+                    <h3 class="fw-light mt-4">Terhubung dengan Saya</h3>
+                    <div class="social-icons mt-3">
+                        <a href="https://wa.me/6281326486534" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/ghapir.a" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@ghapirrrr" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://github.com/ghafiraanindya" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-muted text-center p-3 mt-5">
+        <p>&copy; Ghapirrrr</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="custom-script.js"></script>
+</body>
+</html>

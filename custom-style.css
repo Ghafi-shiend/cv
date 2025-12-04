@@ -1,0 +1,81 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #5e72e4; /* Biru Lembut */
+    --primary-hover-color: #324cdd; /* Biru lebih gelap untuk hover */
+    --secondary-color: #f5365c; /* Pink Kemerahan */
+    --text-dark-color: #32325d; /* Abu-abu Kebiruan Tua */
+    --text-light-color: #ffffff;
+    --text-muted-color: #8898aa; /* Abu-abu muda */
+    --background-light-color: #f6f9fc; /* Putih Gading */
+    --background-white-color: #ffffff;
+    --footer-bg-color: #e9ecef;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--background-light-color);
+    color: var(--text-dark-color);
+}
+
+/* Neon Loading Bar Styles */
+#loading-bar {
+    position: fixed; top: 0; left: 0; width: 0%; height: 3px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 5px var(--primary-color);
+    transition: width 0.4s ease-out, opacity 0.5s ease 0.5s; z-index: 9999;
+}
+
+/* General UI Elements */
+.btn-primary { background-color: var(--primary-color); border-color: var(--primary-color); color: white !important; transition: all 0.3s ease; }
+.btn-primary:hover { background-color: var(--primary-hover-color); border-color: var(--primary-hover-color); transform: translateY(-3px); box-shadow: 0 4px 15px rgba(94, 114, 228, 0.4); }
+
+/* Navbar Styles */
+.navbar { background-color: rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(10px); }
+.nav-link { color: var(--text-muted-color) !important; }
+.nav-link:hover, .nav-link.active { color: var(--primary-color) !important; }
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative; /* Diperlukan untuk positioning partikel */
+    display: flex; align-items: center; justify-content: center; height: 100vh;
+    background-color: var(--text-dark-color); /* Latar belakang gelap untuk hero */
+    color: var(--text-light-color); /* Teks terang di hero section */
+    overflow: hidden; /* Mencegah partikel keluar */
+}
+.hero-section .container { position: relative; z-index: 2; }
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Section Titles */
+main h1, main h2, main h3, main h4, main h5 { color: var(--text-dark-color); font-weight: 600; }
+
+.hero-section h1, .hero-section .lead {
+    color: var(--text-light-color);
+}
+
+/* Footer Styles */
+footer { background-color: var(--footer-bg-color) !important; color: var(--text-muted-color); }
+
+/* Card & Modal Styles */
+.card { background-color: var(--background-white-color); border: 1px solid #dee2e6; }
+.project-card { cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.07); }
+.modal-content { background-color: var(--background-white-color); color: var(--text-dark-color); }
+
+/* Keahlian Page */
+.skill-card { padding: 20px; border-radius: 8px; background-color: var(--background-white-color); box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+.skill-card:hover { transform: translateY(-5px); }
+.skill-card i { color: var(--secondary-color); transition: color 0.3s ease; }
+
+/* Kontak Page */
+.social-icon { display: inline-block; margin: 0 15px; font-size: 2.5rem; color: var(--text-muted-color); transition: color 0.3s ease, transform 0.3s ease; }
+.social-icon:hover { color: var(--primary-color); transform: scale(1.2); }

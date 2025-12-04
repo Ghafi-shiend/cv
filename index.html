@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghafira Anindya Pasha - Beranda</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts (Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (untuk ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate.css (untuk animasi) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+
+    <!-- Neon Loading Bar -->
+    <div id="loading-bar"></div>
+
+    <!-- Navbar Modern -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">Ghafira A.P.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keahlian.html">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projek.html">Projek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artikel.php">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Modern -->
+    <main class="hero-section">
+        <div id="tsparticles"></div>
+        <div class="container text-center">
+            <h1 id="dynamic-hero-title" class="display-4 animate__animated animate__fadeInDown">Ghafira Anindya Pasha</h1>
+            <p id="hero-paragraph" class="lead animate__animated animate__fadeInUp animate__delay-1s" style="max-width: 700px; margin: 1.5rem auto;">
+                Selamat datang di dunia digital Ghafira. Sebagai seorang siswa Rekayasa Perangkat Lunak, Ghafira bersemangat mengubah ide menjadi solusi digital yang inovatif. Jelajahi portofolio untuk melihat karya-karya Ghafira.
+            </p>
+            <div class="mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="btn-group mx-2">
+                    <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Jelajahi
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Beranda</a></li>
+                        <li><a class="dropdown-item" href="tentang.html">Tentang Saya</a></li>
+                        <li><a class="dropdown-item" href="keahlian.html">Keahlian</a></li>
+                        <li><a class="dropdown-item" href="projek.html">Projek</a></li>
+                        <li><a class="dropdown-item" href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Name Input Modal -->
+    <div class="modal fade" id="nameModal" tabindex="-1" aria-labelledby="nameModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nameModalLabel">Selamat Datang!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Portofolio ini dirancang untuk beradaptasi dengan Anda. Silakan masukkan nama Anda untuk pengalaman yang lebih personal.</p>
+                    <form id="nameForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="visitorNameInput" placeholder="Ketik nama Anda di sini..." required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Personalisasi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-muted text-center p-3">
+        <p>&copy; Ghapirrrr</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- tsParticles JS -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="custom-script.js"></script>
+</body>
+</html>
